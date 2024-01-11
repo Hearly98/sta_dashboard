@@ -1,0 +1,36 @@
+<section >
+  <div class=" grid grid-cols-4 gap-5">
+    <article class=" bg-amber-400 w-1/2 h-auto text-white text-base p-4 col-2 ">
+        <i class="pi pi-wallet opacity-50 text-5xl text-start"></i>
+        <div class="text-end align-content-center ">
+            <span>Caja</span><br>
+            <span>S/.0.00</span>
+        </div>
+    </article>
+    <article class=" bg-blue-700 w-1/2 h-auto text-white text-base text-end p-4">
+        <i class="pi pi-money-bill opacity-50 text-5xl"></i>
+        <span>Ventas por Mes</span> <br>
+        <span>S/.0.00</span>
+    </article>
+    <article class=" bg-gray-500 w-1/2 h-auto text-white text-base text-end p-4">
+        <i class="pi pi-ticket opacity-50 text-5xl"></i>
+        <span>Tickets Generados</span> <br>
+        <span>0</span>
+    </article>
+    <article class=" bg-green-600 w-1/2 h-auto text-white text-base text-end p-4">
+        <i class="pi pi-shopping-bag opacity-50 text-5xl"></i>
+        <span>Compras</span> <br>
+        <span>S/.0.00</span>
+    </article>
+    <article class=" bg-red-800 w-1/2 h-auto  text-white text-base text-end p-4" >
+        <i class="pi pi-database opacity-50 text-5xl "></i>
+        <span>Monto Total a Cobrar</span> <br>
+        <span>S/.0.00</span>
+    </article>
+  </div>
+    <article class="card p-5 w-2/4 grid col-span-2">
+        <div>
+            <p-chart type="bar" [data]="basicData" [options]="basicOptions"></p-chart>
+        </div>
+    </article>
+</section>
