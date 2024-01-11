@@ -13,7 +13,8 @@ export class InicioComponent implements OnInit  {
   basicOptions: any;
 
   ngOnInit() {
-      const documentStyle = getComputedStyle(document.documentElement);
+    if (typeof window !== 'undefined') {
+    const documentStyle = getComputedStyle(document.documentElement);
       const textColor = documentStyle.getPropertyValue('--text-color');
       const textColorSecondary = documentStyle.getPropertyValue('--text-color-secondary');
       const surfaceBorder = documentStyle.getPropertyValue('--surface-border');
@@ -61,5 +62,7 @@ export class InicioComponent implements OnInit  {
               }
           }
       };
-  }
+  }else{
+      console.log("no navegador")
+  }}
 }
