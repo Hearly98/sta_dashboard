@@ -1,2 +1,21 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content-container {
+  display: flex;
+  flex-grow: 1;
+}
+
+app-sidebar {
+  width: 200px; /* Ajusta según tus necesidades */
+  flex-shrink: 0; /* Esto evita que el sidebar se encoja */
+}
+
+router-outlet {
+  flex-grow: 1; /* Esto permite que el router-outlet ocupe el espacio restante */
+}

@@ -4,7 +4,6 @@ import { RouterOutlet, RouterLink } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PrimeNGConfig } from 'primeng/api';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
-
 @Component({
   selector: 'app-root',
   standalone: true,

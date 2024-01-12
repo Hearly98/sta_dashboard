@@ -1,7 +1,8 @@
-@import 'primeng/resources/themes/saga-blue/theme.css';
-@import 'primeng/resources/primeng.min.css';
-@import 'primeicons/primeicons.css';
-.card{
+@import "primeng/resources/themes/saga-blue/theme.css";
+@import "primeng/resources/primeng.min.css";
+@import "primeicons/primeicons.css";
+
+.sidebar{
     background-color: #343A40;
     color: #fff;
 }

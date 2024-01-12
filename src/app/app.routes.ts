@@ -10,7 +10,7 @@ export const routes: Routes = [
     component: InicioComponent
   },
   {
-    path:"crearCliente",
+    path:"ventas/clientes",
     title:"Crear Cliente",
     component:CrearClienteComponent
   }
