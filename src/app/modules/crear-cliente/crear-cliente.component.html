@@ -1,18 +1,185 @@
-<section class="container p-4 bg-slate-300">
+<section class=" p-4 bg-slate-300">
    <div class="bg-slate-50">
     <div class="card">
       <p-breadcrumb [model]="items" [home]="home"></p-breadcrumb>
   </div>
-  <div  class="grid grid-cols-2 border-gray-300 border justify-center">
+  <div  class="grid grid-cols-2  justify-center">
       <h1 class="text-xl font-bold p-4">Clientes</h1>
   <div class="grid grid-cols-2 justify-center items-center justify-items-center">
-      <modal-crearcliente></modal-crearcliente>
+      <app-client-modal-register />
       <p-button label="Imprimir Reporte" icon="pi pi-print"></p-button>
-   <!-- <app-paginator></app-paginator>-->
   </div>
 </div>
-<div>
-
+<hr>
+<!--table-->
+  <div class="relative overflow-x-auto sm:rounded-lg p-4">
+    <table class="w-full text-sm text-left rtl:text-right border border-gray-300">
+        <thead class="text-xsuppercase bg-gray-300 ">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Ticket
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  Fecha
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  Tipo. Comprobante
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  Tipo Pago
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  Cliente
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  Total
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  Estado
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  Opciones
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="odd:bg-white  even:bg-gray-50 border-b ">
+                <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
+                  CL0000000001                
+                </th>
+                <td class="px-6 py-4">
+                  03/01/2024
+                </td>
+                <td class="px-6 py-4">
+                  BOLETA
+                </td>
+                <td class="px-6 py-4">
+                  CONTADO
+                </td>
+                <td class="px-6 py-4">
+                  Leinad Huapaya
+                </td>
+                <td class="px-6 py-4">
+                  s/500
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="font-medium text-green-700  hover:underline">Vigente</a>
+                </td>
+                <td class="px-6 py-4">
+                  <i class="pi pi-bars"></i>
+                </td>
+            </tr>
+            <tr class="odd:bg-white  even:bg-gray-50  border-b ">
+              <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
+                CL0000000001                
+              </th>
+              <td class="px-6 py-4">
+                03/01/2024
+              </td>
+              <td class="px-6 py-4">
+                BOLETA
+              </td>
+              <td class="px-6 py-4">
+                CONTADO
+              </td>
+              <td class="px-6 py-4">
+                Sebastian Huertas
+              </td>
+              <td class="px-6 py-4">
+                s/500
+              </td>
+              <td class="px-6 py-4">
+                  <a href="#" class="font-medium text-green-700  hover:underline">Vigente</a>
+              </td>
+              <td class="px-6 py-4">
+                <i class="pi pi-bars"></i>
+              </td>
+            </tr>
+            <tr class="odd:bg-white  even:bg-gray-50  border-b ">
+              <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
+                CL0000000001                
+              </th>
+              <td class="px-6 py-4">
+                03/01/2024
+              </td>
+              <td class="px-6 py-4">
+                BOLETA
+              </td>
+              <td class="px-6 py-4">
+                CONTADO
+              </td>
+              <td class="px-6 py-4">
+                Eduardo Soto
+              </td>
+              <td class="px-6 py-4">
+                s/500
+              </td>
+              <td class="px-6 py-4">
+                  <a href="#" class="font-medium text-green-700  hover:underline">Vigente</a>
+              </td>
+              <td class="px-6 py-4">
+                <i class="pi pi-bars"></i>
+              </td>
+            </tr>
+            <tr class="odd:bg-white  even:bg-gray-50  border-b ">
+              <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
+                CL0000000001                
+              </th>
+              <td class="px-6 py-4">
+                03/01/2024
+              </td>
+              <td class="px-6 py-4">
+                BOLETA
+              </td>
+              <td class="px-6 py-4">
+                CONTADO
+              </td>
+              <td class="px-6 py-4">
+              Cristian Velazquez
+              </td>
+              <td class="px-6 py-4">
+                s/500
+              </td>
+              <td class="px-6 py-4">
+                  <a href="#" class="font-medium text-green-700  hover:underline">Vigente</a>
+              </td>
+              <td class="px-6 py-4">
+                <i class="pi pi-bars"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
+                CL0000000001                
+              </th>
+              <td class="px-6 py-4">
+                03/01/2024
+              </td>
+              <td class="px-6 py-4">
+                BOLETA
+              </td>
+              <td class="px-6 py-4">
+                CONTADO
+              </td>
+              <td class="px-6 py-4">
+               Jean Caldas 
+              </td>
+              <td class="px-6 py-4">
+                s/500
+              </td>
+              <td class="px-6 py-4">
+                  <a href="#" class="font-medium text-green-700  hover:underline">Vigente</a>
+              </td>
+              <td class="px-6 py-4">
+                <i class="pi pi-bars"></i>
+              </td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+  <!--message-->
+<div class="px-4">
+  <span>Mostrando del registro 1 al 5 de un total de 5 datos</span>
+  <div></div>                             
 </div>
    </div>
 

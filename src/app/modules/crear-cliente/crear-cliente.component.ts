@@ -4,12 +4,13 @@ import { RouterLink } from '@angular/router';
 import { MenuItem, PrimeIcons } from 'primeng/api';
 import { BreadcrumbModule } from 'primeng/breadcrumb';
 import { ButtonModule } from 'primeng/button';
+import { ClientModalRegisterComponent } from '../../components/modal/client-modal-register/client-modal-register.component';
 //import { PaginatorComponent } from '../../components/paginator/paginator.component';
-import { CrearClienteModal } from '../../components/modal/crear-cliente/crear-cliente.component';
+
 @Component({
   selector: 'app-crear-cliente',
   standalone: true,
-  imports: [RouterLink, CommonModule, BreadcrumbModule, ButtonModule, CrearClienteModal],
+  imports: [RouterLink, CommonModule, BreadcrumbModule, ButtonModule, ClientModalRegisterComponent],
   templateUrl: './crear-cliente.component.html',
   styleUrl: './crear-cliente.component.css'
 })

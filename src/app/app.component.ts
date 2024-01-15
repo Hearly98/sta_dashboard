@@ -4,10 +4,11 @@ import { RouterOutlet, RouterLink } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PrimeNGConfig } from 'primeng/api';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { ReactiveFormsModule } from '@angular/forms';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, NavbarComponent, SidebarComponent, RouterLink],
+  imports: [CommonModule, RouterOutlet, NavbarComponent, SidebarComponent, RouterLink, ReactiveFormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

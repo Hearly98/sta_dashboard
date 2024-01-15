@@ -1,0 +1,40 @@
+<p-button (click)="showDialog()" icon="pi pi-user-plus" label="Agregar Nuevo/a"></p-button>
+<p-dialog header="Ingresar Cliente" [(visible)]="visible" [style]="{width: '50vw'}">
+  <div class="card">
+    <p-messages [(value)]="messages" [enableService]="false" [closable]="false"></p-messages>
+
+<form>
+  <div class="grid gap-6 mb-6 md:grid-cols-2">
+    <div>
+      <label for="codigo" class="block mb-2 text-sm font-medium text-gray-900">Codigo</label>
+      <input type="text" id="codigo" class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
+     </div>
+      <div>
+          <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 ">Nombre Cliente / Empresa</label>
+          <input type="text" id="first_name" class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
+      </div>
+      <div>
+        <select name="TipoDocumento" id="id-document">
+          <option value="dni">DNI</option>
+          <option value="ruc">RUC</option>
+        </select>
+        <input type="number" id="document" class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+    </div>
+      <div>
+          <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 ">Telefono</label>
+          <input type="tel" id="phone" class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required>
+      </div>
+  </div>
+  <div class="mb-6">
+      <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Email</label>
+      <input type="email" id="email" class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"  required>
+  </div> 
+  <div>
+    <label for="direccion" class="block mb-2 text-sm font-medium text-gray-900 ">Direccion</label>
+    <input type="text" id="direccion" class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" accordion >
+  </div>
+  <button type="submit" class="text-white my-4 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center ">Guardar</button>
+</form>
+
+  </div>
+</p-dialog>
