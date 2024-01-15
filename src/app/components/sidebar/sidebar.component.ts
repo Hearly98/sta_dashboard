@@ -29,13 +29,16 @@ export class SidebarComponent implements OnInit{
             routerLink:'/ventas/clientes'
           },
           {
-            label:'Realizar Ventas'
+            label:'Realizar Ventas',
+            routerLink:'/ventas/generarVenta'
           },
           {
-            label:'Consultar Ventas'
+            label:'Consultar Ventas',
+            routerLink:'/ventas/consultarVentas'
           },
           {
-            label:'Pensiones'
+            label:'Pensiones',
+            routerLink:'/ventas/generarPensiones'
           }
         ]
       },

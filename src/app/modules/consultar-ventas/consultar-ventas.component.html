@@ -1,0 +1,143 @@
+<section class=" p-4 bg-slate-300">
+    <div class="bg-slate-50">
+     <div class="card">
+       <p-breadcrumb [model]="items" [home]="home"></p-breadcrumb>
+   </div>
+   <div class="grid grid-cols-2 justify-start items-center justify-items-start">
+    <!--fechas rango-->
+    <h1 class="text-xl font-bold p-4">Ventas Por Fecha</h1>
+    <div class="relative max-w-sm grid grid-cols-2 gap-3">
+        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+          <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+          </svg>
+        </div>
+        <input datepicker type="text" class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5" placeholder="Select date">
+       
+        <input datepicker type="text" class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5" placeholder="Select date">  
+    </div>
+ </div>
+ <hr>
+ <!--table-->
+   <div class="relative overflow-x-auto sm:rounded-lg p-4">
+     <table class="w-full text-sm text-left rtl:text-right border border-gray-300">
+         <thead class="text-xsuppercase bg-gray-300 ">
+             <tr>
+                 <th scope="col" class="px-6 py-3">
+                     Ticket
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                   Fecha
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                   Tipo. Comprobante
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                   Tipo Pago
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                   Cliente
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                   Total
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                   Estado
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                   Opciones
+                 </th>
+             </tr>
+         </thead>
+         <tbody>
+             <tr class="odd:bg-white  even:bg-gray-50 border-b ">
+                 <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
+                   CL0000000001                
+                 </th>
+                 <td class="px-6 py-4">
+                   03/01/2024
+                 </td>
+                 <td class="px-6 py-4">
+                   BOLETA
+                 </td>
+                 <td class="px-6 py-4">
+                   CONTADO
+                 </td>
+                 <td class="px-6 py-4">
+                   Leinad Huapaya
+                 </td>
+                 <td class="px-6 py-4">
+                   s/500
+                 </td>
+                 <td class="px-6 py-4">
+                     <a href="#" class="font-medium text-green-700  hover:underline">Vigente</a>
+                 </td>
+                 <td class="px-6 py-4">
+                   <i class="pi pi-bars"></i>
+                 </td>
+             </tr>
+            
+             <tr class="odd:bg-white  even:bg-gray-50  border-b ">
+               <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
+                 CL0000000001                
+               </th>
+               <td class="px-6 py-4">
+                 03/01/2024
+               </td>
+               <td class="px-6 py-4">
+                 BOLETA
+               </td>
+               <td class="px-6 py-4">
+                 CONTADO
+               </td>
+               <td class="px-6 py-4">
+               Cristian Velazquez
+               </td>
+               <td class="px-6 py-4">
+                 s/500
+               </td>
+               <td class="px-6 py-4">
+                   <a href="#" class="font-medium text-green-700  hover:underline">Vigente</a>
+               </td>
+               <td class="px-6 py-4">
+                 <i class="pi pi-bars"></i>
+               </td>
+             </tr>
+             <tr>
+               <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
+                 CL0000000001                
+               </th>
+               <td class="px-6 py-4">
+                 03/01/2024
+               </td>
+               <td class="px-6 py-4">
+                 BOLETA
+               </td>
+               <td class="px-6 py-4">
+                 CONTADO
+               </td>
+               <td class="px-6 py-4">
+                Jean Caldas 
+               </td>
+               <td class="px-6 py-4">
+                 s/500
+               </td>
+               <td class="px-6 py-4">
+                   <a href="#" class="font-medium text-green-700  hover:underline">Vigente</a>
+               </td>
+               <td class="px-6 py-4">
+                 <i class="pi pi-bars"></i>
+               </td>
+             </tr>
+         </tbody>
+     </table>
+   </div>
+   <!--message-->
+ <div class="p-4">
+   <span>Mostrando del registro 1 al 3 de un total de 3 datos</span>
+   <div></div>                             
+ </div>
+    </div>
+ 
+ </section>
+ 
