@@ -17,7 +17,7 @@ export class ConsultarVentasComponent implements OnInit{
   home: MenuItem | undefined;
 
   ngOnInit() {
-      this.items = [{ label: 'Inicio' }, { label: 'Ventas' }, { label: 'Ventas Por Fechas' }];
+      this.items = [{ label: 'Inicio' }, { label: 'Ventas' }, { label: 'Ventas Por Fechas' }, {icon:''}];
 
       this.home = { icon: PrimeIcons.HOME, routerLink: '/' };
   }

@@ -1,7 +1,7 @@
-<section class=" p-4 bg-slate-300">
+<section class=" p-4 bg-slate-200 h-full">
    <div class="bg-slate-50">
     <div class="card">
-      <p-breadcrumb [model]="items" [home]="home"></p-breadcrumb>
+      <p-breadcrumb [model]="itemsNav" [home]="home"></p-breadcrumb>
   </div>
   <div  class="grid grid-cols-2  justify-center">
       <h1 class="text-xl font-bold p-4">Clientes</h1>
@@ -13,112 +13,70 @@
 <hr>
 <!--table-->
   <div class="relative overflow-x-auto sm:rounded-lg p-4">
-    <table class="w-full text-sm text-left rtl:text-right border border-gray-300">
-        <thead class="text-xsuppercase bg-gray-300 ">
+    <table class="w-full text-sm text-left  border border-gray-300">
+        <thead class="bg-gray-300">
             <tr>
                 <th scope="col" class="px-6 py-3">
-                    Ticket
-                </th>
-                <th scope="col" class="px-6 py-3">
-                  Fecha
-                </th>
-                <th scope="col" class="px-6 py-3">
-                  Tipo. Comprobante
-                </th>
-                <th scope="col" class="px-6 py-3">
-                  Tipo Pago
+                    Nro.
                 </th>
                 <th scope="col" class="px-6 py-3">
                   Cliente
                 </th>
                 <th scope="col" class="px-6 py-3">
-                  Total
+                  Dni
                 </th>
                 <th scope="col" class="px-6 py-3">
-                  Estado
+                  Telefono
                 </th>
                 <th scope="col" class="px-6 py-3">
-                  Opciones
+                Estado
+                </th>
+                <th scope="col" class="px-6 py-3">
+                Opciones
                 </th>
             </tr>
         </thead>
         <tbody>
-            <tr class="odd:bg-white  even:bg-gray-50 border-b ">
-                <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
-                  CL0000000001                
-                </th>
-                <td class="px-6 py-4">
-                  03/01/2024
-                </td>
-                <td class="px-6 py-4">
-                  BOLETA
-                </td>
-                <td class="px-6 py-4">
-                  CONTADO
-                </td>
-                <td class="px-6 py-4">
-                  Leinad Huapaya
-                </td>
-                <td class="px-6 py-4">
-                  s/500
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-green-700  hover:underline">Vigente</a>
-                </td>
-                <td class="px-6 py-4">
-                  <i class="pi pi-bars"></i>
-                </td>
-            </tr>
             <tr class="odd:bg-white  even:bg-gray-50  border-b ">
               <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
                 CL0000000001                
               </th>
-              <td class="px-6 py-4">
-                03/01/2024
-              </td>
-              <td class="px-6 py-4">
-                BOLETA
-              </td>
-              <td class="px-6 py-4">
-                CONTADO
-              </td>
               <td class="px-6 py-4">
                 Sebastian Huertas
               </td>
               <td class="px-6 py-4">
-                s/500
+                77178504
               </td>
               <td class="px-6 py-4">
-                  <a href="#" class="font-medium text-green-700  hover:underline">Vigente</a>
+                999999999
               </td>
               <td class="px-6 py-4">
-                <i class="pi pi-bars"></i>
+                  <a href="#" class="font-medium text-green-500  hover:underline">Vigente</a>
+              </td>
+              <td class="px-6 py-4 card flex justify-content-center">
+                <p-splitButton icon="pi pi-bars" [model]="itemsIcon"></p-splitButton>
+                <button icon="pi pi-bars"></button>
               </td>
             </tr>
             <tr class="odd:bg-white  even:bg-gray-50  border-b ">
               <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
                 CL0000000001                
               </th>
-              <td class="px-6 py-4">
-                03/01/2024
-              </td>
-              <td class="px-6 py-4">
-                BOLETA
-              </td>
-              <td class="px-6 py-4">
-                CONTADO
-              </td>
               <td class="px-6 py-4">
                 Eduardo Soto
               </td>
               <td class="px-6 py-4">
-                s/500
+                15616214
               </td>
               <td class="px-6 py-4">
-                  <a href="#" class="font-medium text-green-700  hover:underline">Vigente</a>
+                999999999
               </td>
               <td class="px-6 py-4">
-                <i class="pi pi-bars"></i>
+                  <a href="#" class="font-medium text-green-500  hover:underline">Vigente</a>
+              </td>
+              <td class="px-6 py-4 card flex justify-content-center">
+                <p-splitButton icon="pi pi-bars" [model]="itemsIcon"></p-splitButton>
+                <button icon="pi pi-bars"></button>
               </td>
             </tr>
             <tr class="odd:bg-white  even:bg-gray-50  border-b ">
@@ -126,51 +84,125 @@
                 CL0000000001                
               </th>
               <td class="px-6 py-4">
-                03/01/2024
+                Eduardo Soto
               </td>
               <td class="px-6 py-4">
-                BOLETA
+                15616214
               </td>
               <td class="px-6 py-4">
-                CONTADO
+                999999999
               </td>
               <td class="px-6 py-4">
-              Cristian Velazquez
+                  <a href="#" class="font-medium text-green-500  hover:underline">Vigente</a>
               </td>
-              <td class="px-6 py-4">
-                s/500
-              </td>
-              <td class="px-6 py-4">
-                  <a href="#" class="font-medium text-green-700  hover:underline">Vigente</a>
-              </td>
-              <td class="px-6 py-4">
-                <i class="pi pi-bars"></i>
+              <td class="px-6 py-4 card flex justify-content-center">
+                <p-splitButton icon="pi pi-bars" [model]="itemsIcon"></p-splitButton>
+                <button icon="pi pi-bars"></button>
               </td>
             </tr>
-            <tr>
+            <tr class="odd:bg-white  even:bg-gray-50  border-b ">
               <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
                 CL0000000001                
               </th>
               <td class="px-6 py-4">
-                03/01/2024
+                Eduardo Soto
               </td>
               <td class="px-6 py-4">
-                BOLETA
+                15616214
               </td>
               <td class="px-6 py-4">
-                CONTADO
+                999999999
               </td>
               <td class="px-6 py-4">
-               Jean Caldas 
+                  <a href="#" class="font-medium text-green-500  hover:underline">Vigente</a>
+              </td>
+              <td class="px-6 py-4 card flex justify-content-center">
+                <p-splitButton icon="pi pi-bars" [model]="itemsIcon"></p-splitButton>
+                <button icon="pi pi-bars"></button>
+              </td>
+            </tr>
+            <tr class="odd:bg-white  even:bg-gray-50  border-b ">
+              <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
+                CL0000000001                
+              </th>
+              <td class="px-6 py-4">
+                Eduardo Soto
               </td>
               <td class="px-6 py-4">
-                s/500
+                15616214
               </td>
               <td class="px-6 py-4">
-                  <a href="#" class="font-medium text-green-700  hover:underline">Vigente</a>
+                999999999
               </td>
               <td class="px-6 py-4">
-                <i class="pi pi-bars"></i>
+                  <a href="#" class="font-medium text-green-500  hover:underline">Vigente</a>
+              </td>
+              <td class="px-6 py-4 card flex justify-content-center">
+                <p-splitButton icon="pi pi-bars" [model]="itemsIcon"></p-splitButton>
+                <button icon="pi pi-bars"></button>
+              </td>
+            </tr>
+            <tr class="odd:bg-white  even:bg-gray-50  border-b ">
+              <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
+                CL0000000001                
+              </th>
+              <td class="px-6 py-4">
+                Eduardo Soto
+              </td>
+              <td class="px-6 py-4">
+                15616214
+              </td>
+              <td class="px-6 py-4">
+                999999999
+              </td>
+              <td class="px-6 py-4">
+                  <a href="#" class="font-medium text-green-500  hover:underline">Vigente</a>
+              </td>
+              <td class="px-6 py-4 card flex justify-content-center">
+                <p-splitButton icon="pi pi-bars" [model]="itemsIcon"></p-splitButton>
+                <button icon="pi pi-bars"></button>
+              </td>
+            </tr>
+            <tr class="odd:bg-white  even:bg-gray-50  border-b ">
+              <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
+                CL0000000001                
+              </th>
+              <td class="px-6 py-4">
+                Eduardo Soto
+              </td>
+              <td class="px-6 py-4">
+                15616214
+              </td>
+              <td class="px-6 py-4">
+                999999999
+              </td>
+              <td class="px-6 py-4">
+                  <a href="#" class="font-medium text-green-500  hover:underline">Vigente</a>
+              </td>
+              <td class="px-6 py-4 card flex justify-content-center">
+                <p-splitButton icon="pi pi-bars" [model]="itemsIcon"></p-splitButton>
+                <button icon="pi pi-bars"></button>
+              </td>
+            </tr>
+            <tr class="odd:bg-white  even:bg-gray-50  border-b ">
+              <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
+                CL0000000001                
+              </th>
+              <td class="px-6 py-4">
+                Eduardo Soto
+              </td>
+              <td class="px-6 py-4">
+                15616214
+              </td>
+              <td class="px-6 py-4">
+                999999999
+              </td>
+              <td class="px-6 py-4">
+                  <a href="#" class="font-medium text-green-500  hover:underline">Vigente</a>
+              </td>
+              <td class="px-6 py-4 card flex justify-content-center">
+                <p-splitButton icon="pi pi-bars" [model]="itemsIcon"></p-splitButton>
+                <button icon="pi pi-bars"></button>
               </td>
             </tr>
         </tbody>

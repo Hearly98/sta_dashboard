@@ -1,39 +1,42 @@
-<section class=" p-4 bg-slate-300">
+<section class=" p-4 bg-slate-200 h-full">
     <div class="bg-slate-50">
      <div class="card">
        <p-breadcrumb [model]="items" [home]="home"></p-breadcrumb>
    </div>
    <div class="flex flex-row justify-around items-center justify-items-center gap-4">
-    <!--fechas rango-->
     <h1 class="text-xl font-bold p-4">Ventas Por Fecha</h1>
       <!--datepicker-->
           <div class="relative max-w-sm  columns-2  gap-2">
               <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <svg class="w-4 h-4 text-gray-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
                 </svg>
               </div>
-              <input datepicker type="text" class=" border border-gray-300 col-span-4 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5" placeholder="Select date">
-
-              <input datepicker type="text" class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5" placeholder="Select date">
-            </div>
+              <input datepicker type="text" class=" border border-gray-300 col-span-4 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5" placeholder="Fecha Inicio">
+              <div class="absolute inset-y-0 start-1/2 flex items-center ps-3.5 pointer-events-none">
+                <svg class="w-4 h-4 text-gray-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                </svg>
+              </div>
+                <input datepicker type="text" class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5" placeholder="Fecha Fin">
+          </div>
     <!--filtro checkbox-->
                       <ul class="text-sm font-medium text-gray-900 bg-white border border-gray-200 mx-5 rounded-lg flex flex-row gap-3">
                         <li class="w-full border-b border-gray-200 rounded-t-lg">
                             <div class="flex items-center ps-3">
-                                <input id="green-checkbox" type="checkbox" value="" class="w-4 h-4 bg-green-100">
+                                <input id="green-checkbox" type="checkbox" value="" class="w-4 h-4">
                                 <label for="green-checkbox" class="w-full py-3 ms-2 text-sm font-medium text-yellow-500 ">VIGENTES</label>
                             </div>
                         </li>
                         <li class="w-full border-b border-gray-200 rounded-t-lg">
                           <div class="flex items-center ps-3">
-                          <input checked id="red-checkbox" type="checkbox" value="" class="w-4 h-4 text-red-600 bg-gray-100 border-gray-300 rounded focus:ring-red-500  focus:ring-2 ">
+                          <input id="red-checkbox" type="checkbox" value="" class="w-4 h-4 border-gray-300 rounded">
                           <label for="red-checkbox" class="w-full py-3 ms-2 text-sm font-medium text-red-600 ">ANULADAS</label>
                           </div>
                         </li>
                         <li class="w-full border-b border-gray-200 rounded-t-lg">
                             <div class="flex items-center ps-3">
-                                <input id="angular-checkbox" type="checkbox" value="" class="w-4 h-4  bg-gray-100 border-gray-300 rounded focus:ring-green-500">
+                                <input id="angular-checkbox" type="checkbox" value="" class="w-4 h-4   border-gray-300 rounded ">
                                 <label for="angular-checkbox" class="w-full py-3 ms-2 text-sm font-medium text-green-600 ">CANCELADO</label>
                             </div>
                         </li>
@@ -95,7 +98,7 @@
                    s/500
                  </td>
                  <td class="px-6 py-4">
-                     <a href="#" class="font-medium text-green-700  hover:underline">Vigente</a>
+                     <a href="#" class="font-medium text-yellow-500  hover:underline">Vigente</a>
                  </td>
                  <td class="px-6 py-4">
                    <i class="pi pi-bars"></i>
@@ -122,7 +125,7 @@
                  s/500
                </td>
                <td class="px-6 py-4">
-                   <a href="#" class="font-medium text-green-700  hover:underline">Vigente</a>
+                   <a href="#" class="font-medium text-yellow-500  hover:underline">Vigente</a>
                </td>
                <td class="px-6 py-4">
                  <i class="pi pi-bars"></i>
@@ -148,7 +151,7 @@
                  s/500
                </td>
                <td class="px-6 py-4">
-                   <a href="#" class="font-medium text-green-700  hover:underline">Vigente</a>
+                   <a href="#" class="font-medium text-yellow-500  hover:underline">Vigente</a>
                </td>
                <td class="px-6 py-4">
                  <i class="pi pi-bars"></i>
@@ -163,5 +166,4 @@
    <div></div>
  </div>
     </div>
-
  </section>
