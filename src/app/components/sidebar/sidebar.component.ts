@@ -48,15 +48,19 @@ export class SidebarComponent implements OnInit{
         items:[
           {
             label:'Categoria',
+            routerLink:'/almacen/categoria'
           },
           {
             label:'Presentación',
+            routerLink:'/almacen/presentacion'
           },
           {
-            label:'Marca',
+            label:'Marcas',
+            routerLink:'/almacen/marcas'
           },
           {
             label:'Producto',
+            routerLink:'/almacen/producto'
           }
         ]
       },
@@ -116,7 +120,7 @@ export class SidebarComponent implements OnInit{
     ];
   }
   toggleSubMenu(item: MenuItem): void {
-    item['active'] = !item['active']; 
+    item['active'] = !item['active'];
 }
 
 }

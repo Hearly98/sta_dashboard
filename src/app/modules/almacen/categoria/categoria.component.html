@@ -1,0 +1,59 @@
+<section class=" p-4 bg-slate-200 h-full">
+  <div class="bg-slate-50">
+   <div class="card">
+     <p-breadcrumb [model]="itemsNav" [home]="home"></p-breadcrumb>
+ </div>
+ <div  class="grid grid-cols-2  justify-center">
+     <h1 class="text-xl font-bold p-4">Categoria de Productos</h1>
+ <div class="grid justify-center items-center justify-items-center">
+  <app-modal />
+ </div>
+</div>
+<hr>
+<!--table-->
+ <div class="relative overflow-x-auto sm:rounded-lg p-4">
+   <table class="w-full text-sm text-left  border border-gray-300 h-auto">
+       <thead class="bg-gray-300">
+           <tr>
+               <th scope="col" class="px-6 py-3">
+                   Nro.
+               </th>
+               <th scope="col" class="px-6 py-3">
+                 Categoria
+               </th>
+               <th scope="col" class="px-6 py-3">
+                 Estado
+               </th>
+               <th scope="col" class="px-6 py-3">
+                 Opciones
+               </th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr class="odd:bg-white  even:bg-gray-50  border-b ">
+             <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
+               01
+             </th>
+             <td class="px-6 py-4">
+               UNIFORME
+             </td>
+             <td class="px-6 py-4">
+                 <a href="#" class="font-medium text-green-500  hover:underline">Vigente</a>
+             </td>
+             <td class="px-6 py-1 card">
+               <p-splitButton icon="pi pi-bars" [model]="itemsIcon"></p-splitButton>
+               <button icon="pi pi-bars"></button>
+             </td>
+           </tr>
+
+       </tbody>
+   </table>
+ </div>
+ <!--message-->
+<div class="p-4">
+ <span>Mostrando del registro 1 al 1 de un total de 1 dato</span>
+ <div></div>
+</div>
+  </div>
+
+</section>

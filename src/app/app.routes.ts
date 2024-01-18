@@ -1,8 +1,11 @@
 import { Routes } from '@angular/router';
 import { InicioComponent } from './modules/inicio/inicio.component';
-import { CrearClienteComponent } from './modules/crear-cliente/crear-cliente.component';
-import { ConsultarVentasComponent } from './modules/consultar-ventas/consultar-ventas.component';
-import { GenerarVentaComponent } from './modules/generar-venta/generar-venta.component';
+import { CrearClienteComponent } from './modules/ventas/crear-cliente/crear-cliente.component';
+import { ConsultarVentasComponent } from './modules/ventas/consultar-ventas/consultar-ventas.component';
+import { GenerarVentaComponent } from './modules/ventas/generar-venta/generar-venta.component';
+import { CategoriaComponent } from './modules/almacen/categoria/categoria.component';
+import { PresentacionComponent } from './modules/almacen/presentacion/presentacion.component';
+import { MarcasComponent } from './modules/almacen/marcas/marcas.component';
 
 
 export const routes: Routes = [
@@ -25,5 +28,20 @@ export const routes: Routes = [
     path:"ventas/consultarVentas",
     title:"Consultar Ventas",
     component:ConsultarVentasComponent
+  },
+  {
+    path:"almacen/categoria",
+    title:"Categoria",
+    component:CategoriaComponent
+  },
+  {
+    path:"almacen/presentacion",
+    title:"Presentacion",
+    component:PresentacionComponent
+  },
+  {
+    path:"almacen/marcas",
+    title:"Marcas",
+    component:MarcasComponent
   }
 ];
