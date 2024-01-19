@@ -6,6 +6,7 @@ import { GenerarVentaComponent } from './modules/ventas/generar-venta/generar-ve
 import { CategoriaComponent } from './modules/almacen/categoria/categoria.component';
 import { PresentacionComponent } from './modules/almacen/presentacion/presentacion.component';
 import { MarcasComponent } from './modules/almacen/marcas/marcas.component';
+import { ProductoComponent } from './modules/almacen/producto/producto.component';
 
 
 export const routes: Routes = [
@@ -43,5 +44,10 @@ export const routes: Routes = [
     path:"almacen/marcas",
     title:"Marcas",
     component:MarcasComponent
+  },
+  {
+    path:"almacen/productos",
+    title:"Productos",
+    component:ProductoComponent
   }
 ];

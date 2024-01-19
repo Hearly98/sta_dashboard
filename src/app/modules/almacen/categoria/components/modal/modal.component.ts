@@ -1,17 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-
-
 import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
 import { MessagesModule } from 'primeng/messages';
 import { Message } from 'primeng/api';
 
-
-import { FormGroup } from '@angular/forms';
-interface City {
-  name: string;
-  code: string;
-}
 
 @Component({
   selector: 'app-modal',
@@ -20,14 +12,10 @@ interface City {
   templateUrl: './modal.component.html',
   styleUrl: './modal.component.css'
 })
-export class ModalComponent {
+export class ModalComponent implements OnInit{
   value!: string;
   visible: boolean = false;
   messages: Message[] = [];
-
-  cities: City[] | undefined;
-
-  formGroup: FormGroup | undefined;
 
       showDialog() {
           this.visible = true;

@@ -4,13 +4,13 @@ import { ButtonModule } from 'primeng/button';
 import { MessagesModule } from 'primeng/messages';
 import { Message } from 'primeng/api';
 @Component({
-  selector: 'app-crear-presentacion',
+  selector: 'app-modal-producto',
   standalone: true,
   imports: [DialogModule, ButtonModule, MessagesModule],
-  templateUrl: './crear-presentacion.component.html',
-  styleUrl: './crear-presentacion.component.css'
+  templateUrl: './modal-producto.component.html',
+  styleUrl: './modal-producto.component.css'
 })
-export class CrearPresentacionComponent implements OnInit{
+export class ModalProductoComponent implements OnInit{
   value!: string;
   visible: boolean = false;
   messages: Message[] = [];

@@ -1,0 +1,97 @@
+<section class=" p-4 bg-slate-200 h-full">
+    <div class="bg-slate-50">
+     <div class="card">
+       <p-breadcrumb [model]="itemsNav" [home]="home"></p-breadcrumb>
+   </div>
+   <div  class="grid grid-cols-2  justify-center">
+       <h1 class="text-xl font-bold p-4">Productos</h1>
+   <div class="grid grid-cols-2 justify-center items-center justify-items-center">
+    <app-modal-producto />
+    <p-button label="Imprimir Reporte" icon="pi pi-print"></p-button>
+   </div>
+  </div>
+  <hr>
+  <!--table-->
+   <div class="relative overflow-x-auto sm:rounded-lg p-4">
+     <table class="w-full text-sm text-left  border border-gray-300">
+         <thead class="bg-gray-300">
+             <tr>
+                 <th scope="col" class="px-6 py-3">
+                    Barra/Interno
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                   Producto
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                   Marca
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                   Presentacion
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                  S.Min
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Stock
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    P. Compra
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Precio 1
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Precio 2
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Opciones
+                  </th>
+             </tr>
+         </thead>
+         <tbody>
+             <tr class="odd:bg-white  even:bg-gray-50  border-b ">
+               <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
+                 01
+               </th>
+               <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
+                Lapicero
+              </th>
+              <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
+                PILOT
+              </th>
+              <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
+                CAJA
+              </th>
+               <td class="px-6 py-4">
+                 ROPA
+               </td>
+               <td class="px-6 py-4">
+                18.00
+              </td> 
+              <td class="px-6 py-4">
+               16.00
+              </td>
+              <td class="px-6 py-4">
+                00.00
+              </td>
+              <td class="px-6 py-4">
+                00.00
+              </td>
+               <td class="px-6 py-1 card">
+                 <p-splitButton icon="pi pi-bars" [model]="itemsIcon"></p-splitButton>
+                 <button icon="pi pi-bars"></button>
+               </td>
+             </tr>
+  
+         </tbody>
+     </table>
+   </div>
+   <!--message-->
+  <div class="p-4">
+   <span>Mostrando del registro 1 al 1 de un total de 1 dato</span>
+   <div></div>
+  </div>
+    </div>
+  
+  </section>
+  

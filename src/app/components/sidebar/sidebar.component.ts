@@ -60,7 +60,7 @@ export class SidebarComponent implements OnInit{
           },
           {
             label:'Producto',
-            routerLink:'/almacen/producto'
+            routerLink:'/almacen/productos'
           }
         ]
       },
