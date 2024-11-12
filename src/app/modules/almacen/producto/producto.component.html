@@ -17,9 +17,6 @@
          <thead class="bg-gray-300">
              <tr>
                  <th scope="col" class="px-6 py-3">
-                    Barra/Interno
-                 </th>
-                 <th scope="col" class="px-6 py-3">
                    Producto
                  </th>
                  <th scope="col" class="px-6 py-3">
@@ -28,9 +25,6 @@
                  <th scope="col" class="px-6 py-3">
                    Presentacion
                  </th>
-                 <th scope="col" class="px-6 py-3">
-                  S.Min
-                </th>
                 <th scope="col" class="px-6 py-3">
                     Stock
                 </th>
@@ -38,57 +32,40 @@
                     P. Compra
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Precio 1
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Precio 2
-                </th>
-                <th scope="col" class="px-6 py-3">
                     Opciones
                   </th>
              </tr>
          </thead>
          <tbody>
+          @for (producto of productos(); track producto) {
              <tr class="odd:bg-white  even:bg-gray-50  border-b ">
                <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
-                 01
-               </th>
-               <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
-                Lapicero
+               {{producto.nombre}}
               </th>
               <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
-                PILOT
+                {{producto.marca.nombre}}
               </th>
               <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
-                CAJA
+                {{producto.categoria.nombre}}
               </th>
                <td class="px-6 py-4">
-                 ROPA
+                {{producto.stock}}
                </td>
                <td class="px-6 py-4">
-                18.00
+                {{producto.precio}}
               </td> 
-              <td class="px-6 py-4">
-               16.00
-              </td>
-              <td class="px-6 py-4">
-                00.00
-              </td>
-              <td class="px-6 py-4">
-                00.00
-              </td>
                <td class="px-6 py-1 card">
                  <p-splitButton icon="pi pi-bars" [model]="itemsIcon"></p-splitButton>
                  <button icon="pi pi-bars"></button>
                </td>
              </tr>
-  
+            }
          </tbody>
      </table>
    </div>
    <!--message-->
   <div class="p-4">
-   <span>Mostrando del registro 1 al 1 de un total de 1 dato</span>
+   <span>Mostrando del registro 1 al {{productos().length}} de un total de {{productos().length}} datos</span>
    <div></div>
   </div>
     </div>

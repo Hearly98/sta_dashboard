@@ -12,12 +12,9 @@
 <hr>
 <!--table-->
  <div class="relative overflow-x-auto sm:rounded-lg p-4">
-   <table class="w-full text-sm text-left  border border-gray-300">
+   <table class="w-full text-sm border border-gray-300 text-center">
        <thead class="bg-gray-300">
            <tr>
-               <th scope="col" class="px-6 py-3">
-                   Nro.
-               </th>
                <th scope="col" class="px-6 py-3">
                  Marca
                </th>
@@ -29,29 +26,29 @@
               </th>
            </tr>
        </thead>
-       <tbody>
-           <tr class="odd:bg-white  even:bg-gray-50  border-b ">
-             <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
-               01
-             </th>
+       <tbody >
+          @for (marca of marcas(); track marca) {
+           <tr  class="odd:bg-white  even:bg-gray-50  border-b ">
              <td class="px-6 py-4">
-               ROPA
+              {{marca.nombre}}
              </td>
              <td class="px-6 py-4">
-                 <a href="#" class="font-medium text-green-500  hover:underline">Vigente</a>
+                 <p class="font-medium" [ngClass]="marca.estado == 'Activo' ? 'text-green-500' :  'text-red-500'">{{marca.estado}}  </p>
              </td>
-             <td class="px-6 py-1 card">
-               <p-splitButton icon="pi pi-bars" [model]="itemsIcon"></p-splitButton>
-               <button icon="pi pi-bars"></button>
+             <td class="card gap-4 flex justify-center p-4">
+              <button><i class="pi pi-file-edit"></i></button>
+             <button><i class="pi pi-trash"></i></button>
+             
              </td>
+            
            </tr>
-
+          }
        </tbody>
-   </table>
+   </table> 
  </div>
  <!--message-->
 <div class="p-4">
- <span>Mostrando del registro 1 al 1 de un total de 1 dato</span>
+<span>Mostrando del registro 1 al {{ marcas().length }} de un total de {{ marcas().length }} datos</span>
  <div></div>
 </div>
   </div>
