@@ -6,12 +6,14 @@ import { MessagesModule } from 'primeng/messages';
 import { Message } from 'primeng/api';
 
 import { DropdownModule } from 'primeng/dropdown';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { InputGroupModule } from 'primeng/inputgroup';
 import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { buildClienteForm, clienteStructure } from '../../helpers';
 import { CardModule } from 'primeng/card';
+import { InputTextModule } from 'primeng/inputtext';
+import { ListboxModule } from 'primeng/listbox';
 
 interface City {
   name: string;
@@ -25,9 +27,12 @@ interface City {
     CardModule,
     DialogModule,
     ButtonModule,
+    ListboxModule,
     MessagesModule,
+    InputTextModule,
     DropdownModule,
     InputGroupAddonModule,
+    ReactiveFormsModule,
     InputGroupModule,
     InputTextareaModule,
   ],
